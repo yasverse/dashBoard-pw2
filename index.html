@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Campeonato Paulista 2026</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Scripts e fontes  -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <body>
+    <!--  HeroBar no Topo do Dashboard -->
+    <div class="hero">
+        <div class="bar"></div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="conteudoMain">
+        <div class="container">
+            <h1>Painel do Campeonato Paulista 2026</h1>
+
+            <!--Barra de pesquisa -->
+            <div id="buscaSecao" class="secao">
+                <h2>Buscar informações do time</h2>
+                <div class="barraPesquisa">
+                    <input type="text" id="nomeTime" placeholder="Digite o nome do Time (ex: Santos)">
+                    <button onclick="buscarTimes()">Buscar</button>
+                </div>
+                <div id="resultadoBusca" class="cardResultado"></div>
+            </div>
+
+            <!-- GRAFICO 1 - Pontuação Geral Ordenada (Barras) -->
+            <section class="graficoContainer">
+                <h2 class="titulos">Pontuação Geral Ordenada</h2>
+                <div class="chartCentralizador">
+                    <div class="chartContainer">
+                        <canvas id="graficoTop8"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GRAFICO 2 (Lista de Cards) Top 8 Classificados-->
+            <div class="section">
+                <h2 class="titulos">Top 8 Times Classificados para a Próxima Fase</h2>
+                <ul id="listaClassificados" class="cardsLista"></ul>
+            </div>
+
+            <!-- GRAFICO 3 - Saldo Geral dos Times (Gráfico de Pizza) -->
+            <section class="graficoContainer">
+                <h2 class="titulos">Proporção do Saldo de Gols Geral</h2>
+                <div class="chartCentralizador">
+                    <div class="chartContainer" style="height: 380px;">
+                        <canvas id="graficoSaldo"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- GRAFICO 4 - Desempenho e Aproveitamento % (Linha) -->
+            <section class="graficoContainer">
+                <h2 class="titulos">Percentual de Desempenho dos Times</h2>
+                <div class="chartCentralizador">
+                    <div class="chartContainer">
+                        <canvas id="graficoAproveitamento"></canvas>
+                    </div>
+                </div>
+            </section>
+
+        </div> 
+    </main> 
+
+    <script src="script.js"></script>
+</body>
+</html>

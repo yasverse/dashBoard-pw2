@@ -1,0 +1,200 @@
+/* Reset geral */
+*{
+    margin:0; 
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* body */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width:100%;
+    height:auto;
+    background-color: #00030a;  
+
+}
+
+  /* heroBar com imagem no background */
+.hero {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e9f7; 
+    padding: 10px 20px 0 10px; 
+}
+
+.hero .bar {
+    width: 100%;
+    max-width: 1200px; 
+    height: 300px;
+    background-image: url(img/bannerDashboard.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px; 
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Conteúdo Principal */
+.conteudoMain {
+    flex: 1;                    
+    min-height: 100vh;          
+    background-color: #e3e9f7;  
+    padding: 40px 20px;        
+    display: flex;             
+    justify-content: center;    
+    align-items: flex-start;   
+}
+
+/* configurações do container */
+.container {
+    width: 100%;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;      
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05); 
+}
+
+/* estilizacao dos titulos */
+.titulos{
+    width:100%;
+    height:auto;
+    padding: 20px;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+
+}
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+
+    color: #334155;
+    font-size: 1.3rem;
+}
+h3,h4{
+    color:rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.secao{
+    width:100%;
+    height:auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap:10px;
+}
+
+/* Barra de pesquisa */
+input{
+    width:80%;
+    height:auto;
+    padding:10px;
+    border: 2px solid black;
+    border-radius: 20px; 
+}
+
+/* botão */
+button {
+    padding: 10px 20px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #2563eb;
+}
+
+/* Card de resultado */
+.cardResultado {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f8fafc;
+    border-left: 4px solid #3b82f6;
+    border-radius: 4px;
+    line-height: 1.6;}
+
+    /* Container do Gráfico */
+    .chartContainer {
+    position: relative;
+    height: 320px;
+    width: 100%;
+    margin-top: 20px;
+}
+/* Container em forma de Grid p alinhar os itens */
+.cardsLista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto 0 auto;
+    padding: 0;
+    list-style: none; 
+}
+
+/* estilo dos itens da lista */
+.cardsLista li {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid #7d0dc7; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Efeito hover ao passar o mouse */
+.cardsLista li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Elementos internos dos cards */
+.card-posicao {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.card-nome {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.card-pontos {
+    display: inline-block;
+    background: #e6f4ea;
+    color: #731363;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
